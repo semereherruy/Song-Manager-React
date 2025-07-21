@@ -2,6 +2,8 @@
 
 A modern, full-stack React application for managing your music collection with advanced features like search, filtering, pagination, and performance optimizations.
 
+---
+
 ## ✨ Features
 
 ### 🎯 Core Features
@@ -24,6 +26,8 @@ A modern, full-stack React application for managing your music collection with a
 - **Error Handling**: Graceful error states and user feedback
 - **Performance Monitor**: Real-time performance metrics (dev mode)
 
+---
+
 ## 🛠️ Tech Stack
 
 ### Frontend
@@ -39,6 +43,8 @@ A modern, full-stack React application for managing your music collection with a
 - **Jest** - Unit and component testing
 - **React Testing Library** - Component testing utilities
 - **ESLint** - Code linting and formatting
+
+---
 
 ## 📦 Installation
 
@@ -67,15 +73,19 @@ A modern, full-stack React application for managing your music collection with a
 4. **Open your browser**
    Navigate to `http://localhost:3000`
 
+---
+
 ## 🚀 Available Scripts
 
-| Script | Description |
-|--------|-------------|
-| `npm start` | Start development server with hot reload |
-| `npm run build` | Build production bundle with optimizations |
-| `npm run build:analyze` | Build with bundle analysis |
-| `npm test` | Run test suite |
-| `npm run test:watch` | Run tests in watch mode |
+| Script                | Description                                 |
+|-----------------------|---------------------------------------------|
+| `npm start`           | Start development server with hot reload     |
+| `npm run build`       | Build production bundle with optimizations   |
+| `npm run build:analyze` | Build with bundle analysis                |
+| `npm test`            | Run test suite                              |
+| `npm run test:watch`  | Run tests in watch mode                     |
+
+---
 
 ## 📁 Project Structure
 
@@ -83,38 +93,21 @@ A modern, full-stack React application for managing your music collection with a
 song-manager/
 ├── src/
 │   ├── components/          # Reusable UI components
-│   │   ├── Button.js       # Styled button component
-│   │   ├── Header.js       # Navigation header
-│   │   ├── LoadingSpinner.js # Loading indicator
-│   │   ├── MainContainer.js # Layout container
-│   │   ├── PerformanceMonitor.js # Performance tracking
-│   │   ├── SongFilters.js  # Search and filter controls
-│   │   ├── SongList.js     # Song display component
-│   │   └── VirtualizedSongList.js # Optimized list for large datasets
-│   ├── pages/              # Page components
-│   │   ├── HomePage.js     # Landing page
-│   │   ├── SongsPage.js    # Main songs listing
-│   │   ├── AddSongPage.js  # Add new song form
-│   │   └── AboutPage.js    # About page
-│   ├── store/              # Redux store configuration
-│   │   ├── store.js        # Store setup with saga middleware
-│   │   └── songsSlice.js   # Songs state management
-│   ├── sagas/              # Redux-Saga side effects
-│   │   ├── rootSaga.js     # Root saga configuration
-│   │   └── songsSaga.js    # Songs API operations
-│   ├── styles/             # Global styles and theming
-│   │   ├── GlobalStyles.js # Global CSS reset and base styles
-│   │   └── theme.js        # Emotion theme configuration
-│   ├── utils/              # Utility functions
-│   │   └── songUtils.js    # Song filtering and sorting logic
-│   ├── App.js              # Main app component with routing
-│   └── index.js            # Application entry point
-├── dist/                   # Production build output
-├── webpack.config.cjs      # Webpack configuration
-├── .babelrc               # Babel configuration
-├── jest.config.cjs        # Jest testing configuration
-└── package.json           # Project dependencies and scripts
+│   ├── pages/               # Page components
+│   ├── store/               # Redux store configuration
+│   ├── sagas/               # Redux-Saga side effects
+│   ├── styles/              # Global styles and theming
+│   ├── utils/               # Utility functions
+│   ├── App.js               # Main app component with routing
+│   └── index.js             # Application entry point
+├── dist/                    # Production build output
+├── webpack.config.cjs       # Webpack configuration
+├── .babelrc                 # Babel configuration
+├── jest.config.cjs          # Jest testing configuration
+└── package.json             # Project dependencies and scripts
 ```
+
+---
 
 ## 🎯 Key Concepts Explained
 
@@ -141,21 +134,31 @@ song-manager/
 - **Code Splitting**: Split bundles for faster loading
 - **Virtual Scrolling**: Render only visible items
 
+---
+
 ## 🔧 Configuration
 
-### Webpack Configuration
-The project uses a custom Webpack configuration with:
-- Babel loader for modern JavaScript
-- CSS and image loaders
-- Code splitting and optimization
-- Development server with hot reload
+### Webpack Manual Configuration
+
+- **No Create React App:** The project was set up from scratch without CRA, using a custom `webpack.config.cjs`.
+- **Custom Rules:**  
+  - JavaScript/JSX handled by Babel (`babel-loader`).
+  - Images and fonts handled by Webpack’s `asset/resource` type.
+- **Environment Variables:**  
+  - Uses `dotenv-webpack` to inject variables like `API_BASE_URL` from `.env`.
+- **Why Manual:**  
+  - Manual setup demonstrates understanding of build tools, allows for custom optimizations, and meets assignment requirements.
+- **Code Splitting:**  
+  - Uses `optimization.splitChunks` for vendor/common chunk splitting and lazy loading for React pages.
 
 ### Environment Variables
+
 Create a `.env` file in the root directory:
 ```env
 REACT_APP_API_URL=https://jsonplaceholder.typicode.com
 NODE_ENV=development
 ```
+---
 
 ## 🧪 Testing
 
@@ -176,6 +179,8 @@ npm test -- --coverage
 - **Component Tests**: React components with React Testing Library
 - **Integration Tests**: Component interactions
 
+---
+
 ## 📊 Performance Metrics
 
 ### Bundle Analysis
@@ -191,6 +196,8 @@ In development mode, a performance monitor shows:
 - Memory usage
 - Bundle size estimates
 
+---
+
 ## 🚀 Deployment
 
 ### Build for Production
@@ -204,6 +211,8 @@ npm run build
 3. **GitHub Pages**: Use the `gh-pages` package
 4. **AWS S3**: Upload the `dist` folder to S3
 
+---
+
 ## 🤝 Contributing
 
 1. Fork the repository
@@ -212,9 +221,13 @@ npm run build
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
+---
+
 ## 📝 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
+---
 
-**Happy coding! 🎵✨** 
+**Happy coding! 🎵✨**
+
