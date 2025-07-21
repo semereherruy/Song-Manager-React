@@ -160,6 +160,20 @@ NODE_ENV=development
 ```
 ---
 
+## 📡 API Endpoints (Development)
+
+The app uses MirageJS and static data to simulate a backend. The following endpoints are available in development:
+
+- `GET /api/songs` — List all songs
+- `POST /api/songs` — Add a new song
+- `PUT /api/songs/:id` — Update a song
+- `DELETE /api/songs/:id` — Delete a song
+
+**Note:**  
+In production, you can point `API_BASE_URL` to a real backend or JSONPlaceholder.
+
+---
+
 ## 🧪 Testing
 
 ### Running Tests
