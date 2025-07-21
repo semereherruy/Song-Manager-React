@@ -16,6 +16,11 @@ const HeaderContent = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @media (max-width: 576px) {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
 `;
 
 const Logo = styled(Link)`
@@ -41,6 +46,11 @@ const Nav = styled.nav`
   
   @media (max-width: 768px) {
     gap: 1rem;
+  }
+  @media (max-width: 576px) {
+    flex-direction: column;
+    width: 100%;
+    gap: 0.5rem;
   }
 `;
 

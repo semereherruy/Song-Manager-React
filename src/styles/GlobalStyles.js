@@ -12,6 +12,9 @@ export const GlobalStyles = () => (
       html {
         font-size: 16px;
         line-height: 1.5;
+        @media (max-width: 576px) {
+          font-size: 14px;
+        }
       }
 
       body {

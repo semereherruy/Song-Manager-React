@@ -10,6 +10,9 @@ const Container = styled.main`
   @media (max-width: 768px) {
     padding: 1rem;
   }
+  @media (max-width: 576px) {
+    padding: 0.5rem;
+  }
 `;
 
 const Content = styled.div`
@@ -20,6 +23,9 @@ const Content = styled.div`
   
   @media (max-width: 768px) {
     padding: 1rem;
+  }
+  @media (max-width: 576px) {
+    padding: 0.5rem;
   }
 `;
 

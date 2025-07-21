@@ -9,6 +9,9 @@ const FilterContainer = styled.div`
   padding: 1.5rem;
   margin-bottom: 2rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  @media (max-width: 576px) {
+    padding: 0.75rem;
+  }
 `;
 
 const FilterRow = styled.div`
@@ -26,6 +29,9 @@ const FilterRow = styled.div`
     flex-direction: column;
     align-items: stretch;
   }
+  @media (max-width: 576px) {
+    gap: 0.5rem;
+  }
 `;
 
 const SearchInput = styled.input`
@@ -35,6 +41,11 @@ const SearchInput = styled.input`
   border: 1px solid #ddd;
   border-radius: 6px;
   font-size: 1rem;
+  width: 100%;
+  @media (max-width: 576px) {
+    min-width: 0;
+    font-size: 0.95rem;
+  }
   
   &:focus {
     outline: none;
@@ -50,6 +61,10 @@ const Select = styled.select`
   font-size: 1rem;
   background: white;
   cursor: pointer;
+  width: 100%;
+  @media (max-width: 576px) {
+    font-size: 0.95rem;
+  }
   
   &:focus {
     outline: none;
