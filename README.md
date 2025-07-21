@@ -174,6 +174,31 @@ In production, you can point `API_BASE_URL` to a real backend or JSONPlaceholder
 
 ---
 
+Absolutely! Here’s a more **specific and transparent statement** for the “Which parts (if any) were generated with AI” requirement, tailored to your project:
+
+---
+
+## 🤖 AI Usage & Code Verification
+
+- **AI-Assisted Sections:**  
+  - Initial project folder structure and setup instructions  
+  - Webpack and Babel configuration (e.g., `webpack.config.cjs`, `.babelrc`)  
+  - Redux Toolkit and Redux-Saga boilerplate (e.g., `store.js`, `songsSlice.js`, `sagas/`)  
+  - Some React component scaffolding (e.g., `App.js`, routing, and lazy loading setup)  
+  - Troubleshooting solutions for build, deployment, and routing issues  
+  - Documentation templates and explanations in this README
+
+- **Manual Work:**  
+  - All business logic, UI design, and feature implementation were written, reviewed, and tested by me.
+  - All code was understood and adapted to fit the project requirements.
+
+- **Verification steps:**  
+  - Run the app locally and checked all features.
+  - Used Jest and React Testing Library for unit/component tests.
+  - Manually tested UI for CRUD, filtering, and performance features.
+
+---
+
 ## 🧪 Testing
 
 ### Running Tests
