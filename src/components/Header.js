@@ -4,10 +4,14 @@ import styled from '@emotion/styled';
 
 // Styled component using Emotion
 const HeaderContainer = styled.header`
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(90deg, #00c6ff 0%, #0072ff 100%);
   color: white;
-  padding: 1rem 2rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1.2rem 2rem;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  backdrop-filter: blur(6px);
 `;
 
 const HeaderContent = styled.div`
@@ -24,26 +28,21 @@ const HeaderContent = styled.div`
 `;
 
 const Logo = styled(Link)`
-  font-size: 1.8rem;
-  font-weight: 700;
-  margin: 0;
-  color: white;
+  font-size: 2rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  color: #fff;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.12);
   text-decoration: none;
-  
-  @media (max-width: 768px) {
-    font-size: 1.5rem;
-  }
-  
+  transition: color 0.2s;
   &:hover {
-    color: white;
-    text-decoration: none;
+    color: #ffe082;
   }
 `;
 
 const Nav = styled.nav`
   display: flex;
-  gap: 1.5rem;
-  
+  gap: 2rem;
   @media (max-width: 768px) {
     gap: 1rem;
   }
@@ -55,18 +54,19 @@ const Nav = styled.nav`
 `;
 
 const NavLink = styled(Link)`
-  color: white;
+  color: #fff;
   text-decoration: none;
-  font-weight: 500;
-  transition: opacity 0.2s ease;
-  padding: 0.5rem 1rem;
-  border-radius: 4px;
-  background-color: ${props => props.active ? 'rgba(255, 255, 255, 0.2)' : 'transparent'};
-  
-  &:hover {
-    opacity: 0.8;
-    text-decoration: none;
-    background-color: rgba(255, 255, 255, 0.1);
+  font-weight: 600;
+  font-size: 1.1rem;
+  padding: 0.5rem 1.2rem;
+  border-radius: 999px;
+  background: ${({ active }) => active ? 'rgba(255,255,255,0.18)' : 'transparent'};
+  box-shadow: ${({ active }) => active ? '0 2px 8px rgba(0,0,0,0.08)' : 'none'};
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  &:hover, &:focus {
+    background: rgba(255,255,255,0.28);
+    color: #ffe082;
+    outline: none;
   }
 `;
 
