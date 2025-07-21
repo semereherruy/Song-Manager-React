@@ -12,6 +12,7 @@ module.exports = (env, argv) => {
     output: {
       path: path.resolve(__dirname, 'dist'),
       filename: isProduction ? '[name].[contenthash].js' : '[name].js',
+      publicPath: '/',
       clean: true, // Clean dist folder before each build
     },
     
